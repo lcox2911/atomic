@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Puzzle Three</title>
+
+  <script src="puzz3.js" defer></script>
+  <link rel="stylesheet" href="escape-room.css?v=2">
+</head>
+
+<body>
+
+  <div class="inst">
+    <h1>Puzzle 3</h1>
+
+  <p>These questions focus on calculations.  Answer each question in the box and you will get the next question.<p></p>
+  </div>
+  
+  <!-- <div class="image-row"> 
+    <img id="compass" src="Images/calc1.jpg"> 
+    </div>  -->
+
+  <div id="Qtn1">
+    <img id="compass" src="Images/calc1.jpg"> 
+   <div class="center-wrap"> Enter your answer below <input id="ans1" type="text" placeholder="Enter Answer Here"> <button id="ent1">Enter</button> </div>
+  </div>
+
+  <div id="Qtn2" style="display:none;">
+    <img id="compass" src="Images/bonds.jpg"> 
+       <div class="center-wrap">Enter your answer below<input id="ans2" type="text" placeholder="Enter Answer Here">
+    <button id="ent2">Enter</button></div>
+  </div>
+
+  <div id="Qtn3" style="display:none;">
+    <img id="compass" src="Images/rocket.jpg">     
+    <div class="center-wrap"> Enter your answer below<input id="ans3" type="text" placeholder="Enter Answer Here">
+    <button id="ent3">Enter</button></div>
+
+  </div>
+
+  <img id="hintBtn" src="Images/Hint.png" style="cursor: pointer;" class="hintBtn">
+
+  <div id="number"></div>
+
+   <div id="hint"> \
+    
+  </div>
+
+
+  <button class="back" id="backButton">Go Back</button>
+  <div id="overlay"></div>
+
+  <div id="timer-container">
+    Time Remaining: <span id="timer-display">20:00</span>
+  </div>
+
+  <div id="timeOverlay" class="overlay">
+      <div class="overlay-content">
+        <h1>Time is up!</h1>
+      </div>
+    </div>
+</body>

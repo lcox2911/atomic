@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="escape-room.css?v=2">
+  <script src="puzz1.js" defer></script>
+  <title>Puzzle 1</title>
+</head>
+
+<body>
+
+  <h1>Puzzle 1</h1>
+
+  <p class="description">
+    This puzzle focuses on shapes of molecules<br>
+    You will need to match up the diagram, the number of electron regions and the name of the shape.
+  </p>
+
+  <div class="game-container">
+    <div class="column" id="pictures">
+      <h3>Diagram</h3>
+    </div>
+    <div class="column" id="descriptions">
+      <h3>Electron Regions</h3>
+    </div>
+    <div class="column" id="names">
+      <h3>Shape</h3>
+    </div>
+  </div>
+
+  <div id="result"></div>
+  <button id="submitBtn">Submit</button>
+
+  <!-- Elements that must appear ABOVE overlays -->
+  <div id="number"></div>
+  <button class="back" id="backButton">Go Back</button>
+
+  <img id="hintBtn" src="Images/Hint.png" class="hintBtn" style="cursor: pointer;">
+  <div id="hint">
+    These are all to do with shapes.  Remember CRABSA to work out the shape.
+  </div>
+
+  <div id="timer-container">
+    Time Remaining: <span id="timer-display">20:00</span>
+  </div>
+
+  <!-- OVERLAYS MUST BE INSIDE BODY -->
+  <div id="overlay"></div>
+
+  <div id="timeOverlay" class="overlay">
+    <div class="overlay-content">
+      <h1>Time is up!</h1>
+    </div>
+  </div>
+
+</body>
+</html>
